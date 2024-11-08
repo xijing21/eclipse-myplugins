@@ -33,23 +33,34 @@
 
 ### 第二部分：Eclipse 插件开发
 
-3. Eclipse 插件架构
+> 了解和掌握 Eclipse 插件开发的一些基础操作，什么是 Extension 和 Extention Point ？有哪些 Extension 和 Extention Point，它们是什么怎么用。如何利用它们实现需求？亦或者需要自己开发 Extension，如何实现。
+
+3. Eclipse 插件项目创建和运行
+
+   * 插件开发环境设置：安装 Plugin Development Environment (PDE)
+   * 创建第一个插件项目 Hello,World
+   * 插件的 Manifest 文件
+   * 插件的 plugin.xml 文件
+   * 插件的 build.properties 文件
+   * 运行插件项目
+4. Eclipse 插件架构
+
    * OSGi 的基本概念
    * 插件与扩展点的关系
    * Eclipse 运行时环境
-4. 插件开发环境设置
-   * 安装 Plugin Development Environment (PDE)
-   * 创建第一个插件项目
-   * 理解插件的 Manifest 文件
 5. 插件功能实现
+
    * 开发自定义视图与编辑器
    * 使用 Eclipse API 访问工作区资源
    * 实现菜单和工具栏的自定义功能
 6. 调试与测试插件
+
    * 在 Eclipse 中调试插件
    * 单元测试与集成测试的基本方法
 
 ### 第三部分：Eclipse Embeded CDT
+
+> 目前已知 Eclipse Embeded CDT 插件是非常接近目标需求的插件，甚至一些 RISC-V 插件已经有了，它们当前的效果如何，是如何实现的。
 
 ### 第四部分：RISC-V 基础知识
 
