@@ -18,7 +18,7 @@
 
 基于Eclipse开发的产品：
 
-- [Eclipse IDE for Embedded C/C++ Developers](https://www.eclipse.org/downloads/packages/release/2024-09/r/eclipse-ide-embedded-cc-developers) ：与嵌入式C/C++开发相关，且目前已经有了一些RISC-V交叉构建的插件和调试插件，比如 sifive unmatched。
+- [Eclipse IDE for Embedded C/C++ Developers](https://www.eclipse.org/downloads/packages/release/2024-09/r/eclipse-ide-embedded-cc-developers) ：与嵌入式C/C++开发相关，且目前已经有了一些RISC-V交叉构建的插件和调试插件，比如 sifive hifive1。
 - [Nuclei Studio IDE ](https://www.nucleisys.com/download.php)：芯来科技（专业RISC-V CPU IP及解决方案供应商）基于 Eclipse 开发的开源的 IDE 产品，主要集成了自研的 RISC-V芯片和SDK。
 - ~~[SiFive Freedom Studio RISC-V IDE ](https://github.com/sifive/freedom-studio)：下载链接目前直接导向注册登陆，登陆后进入线上Core Designs。~~
 
