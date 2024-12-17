@@ -1,0 +1,71 @@
+convert IMG_202412124834_512x513.png -resize 16x16 eclipse16.png
+convert IMG_202412124834_512x513.png -resize 32x32 eclipse16@2x.png
+convert IMG_202412124834_512x513.png -resize 32x32 eclipse32.png
+convert IMG_202412124834_512x513.png -resize 64x64 eclipse32@2x.png
+convert IMG_202412124834_512x513.png -resize 48x48 eclipse48.png
+convert IMG_202412124834_512x513.png -resize 96x96 eclipse48@2x.png
+convert IMG_202412124834_512x513.png -resize 128x128 eclipse128.png
+convert IMG_202412124834_512x513.png -resize 256x256 eclipse256.png
+convert IMG_202412124834_512x513.png -resize 512x512 eclipse256@2x.png
+convert IMG_202412124834_512x513.png -resize 512x512 eclipse512.png
+convert IMG_202412124834_512x513.png -resize 1024x1024 eclipse1024.png
+---------------------
+convert IMG_202412124834_512x513.png -resize 16x16 ruyisdk16.png
+convert IMG_202412124834_512x513.png -resize 32x32 ruyisdk16@2x.png
+convert IMG_202412124834_512x513.png -resize 32x32 ruyisdk32.png
+convert IMG_202412124834_512x513.png -resize 64x64 ruyisdk32@2x.png
+convert IMG_202412124834_512x513.png -resize 48x48 ruyisdk48.png
+convert IMG_202412124834_512x513.png -resize 96x96 ruyisdk48@2x.png
+convert IMG_202412124834_512x513.png -resize 128x128 ruyisdk128.png
+convert IMG_202412124834_512x513.png -resize 256x256 ruyisdk256.png
+convert IMG_202412124834_512x513.png -resize 512x512 ruyisdk256@2x.png
+convert IMG_202412124834_512x513.png -resize 512x512 ruyisdk512.png
+convert IMG_202412124834_512x513.png -resize 1024x1024 ruyisdk1024.png
+
+
+convert IMG_202412124834_512x513.png -resize 256x256 image.ico
+convert image.ico -compress none ruyisdk.ico  #解决图片不能预览问题（格式是带压缩的格式，命令去压缩就行）
+----------------------
+
+./packages/org.eclipse.epp.package.rcp/eclipse_lg.png
+./packages/org.eclipse.epp.package.rcp/eclipse_lg@2x.png
+
+./packages/org.eclipse.epp.package.rcp/eclipse16.png
+./packages/org.eclipse.epp.package.rcp/eclipse16@2x.png
+./packages/org.eclipse.epp.package.rcp/eclipse32.png
+./packages/org.eclipse.epp.package.rcp/eclipse32@2x.png
+
+./packages/org.eclipse.epp.package.rcp/eclipse48@2x.png
+./packages/org.eclipse.epp.package.rcp/eclipse256.png
+./packages/org.eclipse.epp.package.rcp/epp32.png
+
+
+./packages/org.eclipse.epp.package.rcp/eclipse48.png
+
+./packages/org.eclipse.epp.package.rcp/eclipse256@2x.png
+
+-rwxr-xr-x 1 phebe phebe  70034 12月 12 13:45  eclipse1024.png*
+-rwxr-xr-x 1 phebe phebe   6861 12月 12 13:45  eclipse128.png*
+-rwxr-xr-x 1 phebe phebe   1187 12月 12 13:45 'eclipse16@2x.png'*
+-rwxr-xr-x 1 phebe phebe    623 12月 12 13:45  eclipse16.png*
+-rwxr-xr-x 1 phebe phebe   1763 12月 12 13:45  eclipse22.png*
+-rwxr-xr-x 1 phebe phebe   1813 12月 12 13:45  eclipse24.png*
+-rwxr-xr-x 1 phebe phebe  24115 12月 12 13:45 'eclipse256@2x.png'*
+-rwxr-xr-x 1 phebe phebe  11499 12月 12 13:45  eclipse256.png*
+-rwxr-xr-x 1 phebe phebe   2738 12月 12 13:45 'eclipse32@2x.png'*
+-rwxr-xr-x 1 phebe phebe   1319 12月 12 13:45  eclipse32.png*
+-rwxr-xr-x 1 phebe phebe   7371 12月 12 13:44  eclipse-426x100.png*
+-rwxr-xr-x 1 phebe phebe   4171 12月 12 13:45 'eclipse48@2x.png'*
+-rwxr-xr-x 1 phebe phebe   1974 12月 12 13:45  eclipse48.png*
+-rwxr-xr-x 1 phebe phebe  29447 12月 12 13:45  eclipse512.png*
+-rwxr-xr-x 1 phebe phebe   3682 12月 12 13:45  eclipse64.png*
+-rwxr-xr-x 1 phebe phebe  13315 12月 12 13:44  eclipse-800x188.png*
+-rwxr-xr-x 1 phebe phebe   2149 12月 12 13:44  eclipse-icon-bw.png*
+-rwxr-xr-x 1 phebe phebe 158224 12月 12 13:45 'eclipse_lg@2x.png'*
+-rwxr-xr-x 1 phebe phebe  46199 12月 12 13:45  eclipse_lg.png*
+-rwxr-xr-x 1 phebe phebe   4666 12月 12 13:44  eclipse-logo-bw-332x78.png*
+-rwxr-xr-x 1 phebe phebe  21695 12月 12 13:45  eclipse_update_120.jpg*
+-rwxr-xr-x 1 phebe phebe 140566 12月 12 13:45  icon.xpm*
+-rwxr-xr-x 1 phebe phebe  30987 12月 12 13:44  root_banner_logo.jpg*
+-rwxr-xr-x 1 phebe phebe 409566 12月 12 13:47  splash.bmp*
+-rwxr-xr-x 1 phebe phebe 170533 12月 12 13:45  splash.png*

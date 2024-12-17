@@ -1,0 +1,246 @@
+./packages/org.eclipse.epp.package.scout.product/epp.product:      <image path="/org.eclipse.epp.package.scout/eclipse_lg.png"/>
+./packages/org.eclipse.epp.package.scout.product/epp.product:   <windowImages i16="/org.eclipse.epp.package.scout/eclipse16.png" i32="/org.eclipse.epp.package.scout/eclipse32.png" i48="/org.eclipse.epp.package.scout/eclipse48.png" i256="/org.eclipse.epp.package.scout/eclipse256.png"/>
+./packages/org.eclipse.epp.package.rcp.feature/epp.website.xml:   iconurl="http://www.eclipse.org/downloads/images/rcp.png"
+./packages/org.eclipse.epp.package.jee.product/epp.product:      <image path="/org.eclipse.epp.package.jee/eclipse_lg.png"/>
+./packages/org.eclipse.epp.package.jee.product/epp.product:   <windowImages i16="/org.eclipse.epp.package.jee/javaee-ide_x16.png" i32="/org.eclipse.epp.package.jee/javaee-ide_x32.png" i48="/org.eclipse.epp.package.jee/javaee-ide_x48.png"/>
+./packages/org.eclipse.epp.package.modeling.product/epp.product:      <image path="/org.eclipse.epp.package.modeling/eclipse_lg.png"/>
+./packages/org.eclipse.epp.package.modeling.product/epp.product:   <windowImages i16="/org.eclipse.epp.package.modeling/eclipse16.png" i32="/org.eclipse.epp.package.modeling/eclipse32.png" i48="/org.eclipse.epp.package.modeling/eclipse48.png" i256="/org.eclipse.epp.package.modeling/eclipse256.png"/>
+./packages/org.eclipse.epp.package.scout/plugin.xml:               value="eclipse_lg.png">
+./packages/org.eclipse.epp.package.scout/plugin.xml:               value="eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+./packages/org.eclipse.epp.package.scout/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+./packages/org.eclipse.epp.package.scout/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.scout/build.properties:               eclipse16.png,\
+./packages/org.eclipse.epp.package.scout/build.properties:               eclipse16@2x.png,\
+./packages/org.eclipse.epp.package.scout/build.properties:               eclipse32.png,\
+./packages/org.eclipse.epp.package.scout/build.properties:               eclipse32@2x.png,\
+./packages/org.eclipse.epp.package.scout/build.properties:               eclipse48.png,\
+./packages/org.eclipse.epp.package.scout/build.properties:               eclipse48@2x.png,\
+./packages/org.eclipse.epp.package.scout/build.properties:               eclipse256.png,\
+./packages/org.eclipse.epp.package.scout/build.properties:               eclipse256@2x.png,\
+./packages/org.eclipse.epp.package.scout/build.properties:               eclipse_lg.png,\
+./packages/org.eclipse.epp.package.scout/build.properties:               eclipse_lg@2x.png,\
+./packages/org.eclipse.epp.package.scout/eclipse32.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse32.png"
+./packages/org.eclipse.epp.package.scout/eclipse48.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse48@2x.png"
+./packages/org.eclipse.epp.package.scout/about.ini:windowImage=eclipse16.png
+./packages/org.eclipse.epp.package.scout/about.ini:aboutImage=eclipse_lg.png
+./packages/org.eclipse.epp.package.java.product/epp.product:      <image path="/org.eclipse.epp.package.java/eclipse_lg.png"/>
+./packages/org.eclipse.epp.package.java.product/epp.product:   <windowImages i16="/org.eclipse.epp.package.java/eclipse16.png" i32="/org.eclipse.epp.package.java/eclipse32.png" i48="/org.eclipse.epp.package.java/eclipse48.png" i256="/org.eclipse.epp.package.java/eclipse256.png"/>
+./packages/org.eclipse.epp.package.rcp/plugin.xml:               value="eclipse_lg.png">
+./packages/org.eclipse.epp.package.rcp/plugin.xml:               value="eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+./packages/org.eclipse.epp.package.rcp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+./packages/org.eclipse.epp.package.rcp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+./packages/org.eclipse.epp.package.rcp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+./packages/org.eclipse.epp.package.rcp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
+./packages/org.eclipse.epp.package.rcp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.rcp/plugin.xml:            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+./packages/org.eclipse.epp.package.rcp/build.properties:               eclipse16.png,\
+./packages/org.eclipse.epp.package.rcp/build.properties:               eclipse16@2x.png,\
+./packages/org.eclipse.epp.package.rcp/build.properties:               eclipse32.png,\
+./packages/org.eclipse.epp.package.rcp/build.properties:               eclipse32@2x.png,\
+./packages/org.eclipse.epp.package.rcp/build.properties:               eclipse48.png,\
+./packages/org.eclipse.epp.package.rcp/build.properties:               eclipse48@2x.png,\
+./packages/org.eclipse.epp.package.rcp/build.properties:               eclipse256.png,\
+./packages/org.eclipse.epp.package.rcp/build.properties:               eclipse256@2x.png,\
+./packages/org.eclipse.epp.package.rcp/build.properties:               eclipse_lg.png,\
+./packages/org.eclipse.epp.package.rcp/build.properties:               eclipse_lg@2x.png,\
+./packages/org.eclipse.epp.package.rcp/eclipse32.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse32.png"
+./packages/org.eclipse.epp.package.rcp/eclipse48.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse48@2x.png"
+./packages/org.eclipse.epp.package.rcp/about.ini:windowImage=eclipse16.png
+./packages/org.eclipse.epp.package.rcp/about.ini:aboutImage=eclipse_lg.png
+./packages/org.eclipse.epp.package.common/splash/INSTRUCTIONS.md:Repeat process, but for About dialog image which exists in each EPP package as `packages/org.eclipse.epp.package.*/eclipse_lg.png` (approx 115 x 302) and `packages/org.eclipse.epp.package.*/eclipse_lg@2x.png` (2x other image, approx 230 x 604).
+./packages/org.eclipse.epp.package.cpp.feature/epp.website.xml:   iconurl="http://www.eclipse.org/downloads/images/cdt.png"
+./packages/org.eclipse.epp.package.cpp/plugin.xml:               value="eclipse_lg.png">
+./packages/org.eclipse.epp.package.cpp/plugin.xml:               value="eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+./packages/org.eclipse.epp.package.cpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/start-cheatsheet.png"
+./packages/org.eclipse.epp.package.cpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+./packages/org.eclipse.epp.package.cpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+./packages/org.eclipse.epp.package.cpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+./packages/org.eclipse.epp.package.cpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
+./packages/org.eclipse.epp.package.cpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.cpp/plugin.xml:            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+./packages/org.eclipse.epp.package.cpp/build.properties:               eclipse16.png,\
+./packages/org.eclipse.epp.package.cpp/build.properties:               eclipse16@2x.png,\
+./packages/org.eclipse.epp.package.cpp/build.properties:               eclipse32.png,\
+./packages/org.eclipse.epp.package.cpp/build.properties:               eclipse32@2x.png,\
+./packages/org.eclipse.epp.package.cpp/build.properties:               eclipse48.png,\
+./packages/org.eclipse.epp.package.cpp/build.properties:               eclipse48@2x.png,\
+./packages/org.eclipse.epp.package.cpp/build.properties:               eclipse256.png,\
+./packages/org.eclipse.epp.package.cpp/build.properties:               eclipse256@2x.png,\
+./packages/org.eclipse.epp.package.cpp/build.properties:               eclipse_lg.png,\
+./packages/org.eclipse.epp.package.cpp/build.properties:               eclipse_lg@2x.png,\
+./packages/org.eclipse.epp.package.cpp/eclipse32.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse32.png"
+./packages/org.eclipse.epp.package.cpp/eclipse48.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse48@2x.png"
+./packages/org.eclipse.epp.package.cpp/about.ini:windowImage=eclipse16.png
+./packages/org.eclipse.epp.package.cpp/about.ini:aboutImage=eclipse_lg.png
+./packages/org.eclipse.epp.package.committers.feature/epp.website.xml:   iconurl="http://www.eclipse.org/downloads/images/committers.png"
+./packages/org.eclipse.epp.package.committers/plugin.xml:               value="eclipse_lg.png">
+./packages/org.eclipse.epp.package.committers/plugin.xml:               value="eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+./packages/org.eclipse.epp.package.committers/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+./packages/org.eclipse.epp.package.committers/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+./packages/org.eclipse.epp.package.committers/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+./packages/org.eclipse.epp.package.committers/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
+./packages/org.eclipse.epp.package.committers/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.committers/plugin.xml:            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+./packages/org.eclipse.epp.package.committers/build.properties:               eclipse16.png,\
+./packages/org.eclipse.epp.package.committers/build.properties:               eclipse16@2x.png,\
+./packages/org.eclipse.epp.package.committers/build.properties:               eclipse32.png,\
+./packages/org.eclipse.epp.package.committers/build.properties:               eclipse32@2x.png,\
+./packages/org.eclipse.epp.package.committers/build.properties:               eclipse48.png,\
+./packages/org.eclipse.epp.package.committers/build.properties:               eclipse48@2x.png,\
+./packages/org.eclipse.epp.package.committers/build.properties:               eclipse256.png,\
+./packages/org.eclipse.epp.package.committers/build.properties:               eclipse256@2x.png,\
+./packages/org.eclipse.epp.package.committers/build.properties:               eclipse_lg.png,\
+./packages/org.eclipse.epp.package.committers/build.properties:               eclipse_lg@2x.png,\
+./packages/org.eclipse.epp.package.committers/eclipse32.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse32.png"
+./packages/org.eclipse.epp.package.committers/eclipse48.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse48@2x.png"
+./packages/org.eclipse.epp.package.committers/about.ini:windowImage=eclipse16.png
+./packages/org.eclipse.epp.package.committers/about.ini:aboutImage=eclipse_lg.png
+./packages/org.eclipse.epp.package.modeling.feature/epp.website.xml:   iconurl="http://www.eclipse.org/modeling/images/modeling_about.png"
+./packages/org.eclipse.epp.package.committers.product/epp.product:      <image path="/org.eclipse.epp.package.committers/eclipse_lg.png"/>
+./packages/org.eclipse.epp.package.committers.product/epp.product:   <windowImages i16="/org.eclipse.epp.package.committers/eclipse16.png" i32="/org.eclipse.epp.package.committers/eclipse32.png" i48="/org.eclipse.epp.package.committers/eclipse48.png" i256="/org.eclipse.epp.package.committers/eclipse256.png"/>
+./packages/org.eclipse.epp.package.dsl.feature/epp.website.xml:   iconurl="http://www.eclipse.org/downloads/images/dsl-package_42.png"
+
+./packages/org.eclipse.epp.package.embedcpp/plugin.xml:               value="eclipse_lg.png">
+./packages/org.eclipse.epp.package.embedcpp/plugin.xml:               value="eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+./packages/org.eclipse.epp.package.embedcpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/start-cheatsheet.png"
+./packages/org.eclipse.epp.package.embedcpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+./packages/org.eclipse.epp.package.embedcpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+./packages/org.eclipse.epp.package.embedcpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+./packages/org.eclipse.epp.package.embedcpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
+./packages/org.eclipse.epp.package.embedcpp/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.embedcpp/plugin.xml:            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+./packages/org.eclipse.epp.package.embedcpp/build.properties:               eclipse16.png,\
+./packages/org.eclipse.epp.package.embedcpp/build.properties:               eclipse16@2x.png,\
+./packages/org.eclipse.epp.package.embedcpp/build.properties:               eclipse32.png,\
+./packages/org.eclipse.epp.package.embedcpp/build.properties:               eclipse32@2x.png,\
+./packages/org.eclipse.epp.package.embedcpp/build.properties:               eclipse48.png,\
+./packages/org.eclipse.epp.package.embedcpp/build.properties:               eclipse48@2x.png,\
+./packages/org.eclipse.epp.package.embedcpp/build.properties:               eclipse256.png,\
+./packages/org.eclipse.epp.package.embedcpp/build.properties:               eclipse256@2x.png,\
+./packages/org.eclipse.epp.package.embedcpp/build.properties:               eclipse_lg.png,\
+./packages/org.eclipse.epp.package.embedcpp/build.properties:               eclipse_lg@2x.png,\
+./packages/org.eclipse.epp.package.embedcpp/eclipse32.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse32.png"
+./packages/org.eclipse.epp.package.embedcpp/eclipse48.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse48@2x.png"
+./packages/org.eclipse.epp.package.embedcpp/about.ini:windowImage=eclipse16.png
+./packages/org.eclipse.epp.package.embedcpp/about.ini:aboutImage=eclipse_lg.png
+./packages/org.eclipse.epp.package.embedcpp.product/epp.product:      <image path="/org.eclipse.epp.package.embedcpp/eclipse_lg.png"/>
+./packages/org.eclipse.epp.package.embedcpp.product/epp.product:   <windowImages i16="/org.eclipse.epp.package.embedcpp/eclipse16.png" i32="/org.eclipse.epp.package.embedcpp/eclipse32.png" i48="/org.eclipse.epp.package.embedcpp/eclipse48.png" i256="/org.eclipse.epp.package.embedcpp/eclipse256.png"/>
+
+./packages/org.eclipse.epp.package.java/plugin.xml:               value="eclipse_lg.png">
+./packages/org.eclipse.epp.package.java/plugin.xml:               value="eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+./packages/org.eclipse.epp.package.java/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+./packages/org.eclipse.epp.package.java/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+./packages/org.eclipse.epp.package.java/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+./packages/org.eclipse.epp.package.java/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
+./packages/org.eclipse.epp.package.java/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.java/plugin.xml:            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+./packages/org.eclipse.epp.package.java/build.properties:               eclipse16.png,\
+./packages/org.eclipse.epp.package.java/build.properties:               eclipse16@2x.png,\
+./packages/org.eclipse.epp.package.java/build.properties:               eclipse32.png,\
+./packages/org.eclipse.epp.package.java/build.properties:               eclipse32@2x.png,\
+./packages/org.eclipse.epp.package.java/build.properties:               eclipse48.png,\
+./packages/org.eclipse.epp.package.java/build.properties:               eclipse48@2x.png,\
+./packages/org.eclipse.epp.package.java/build.properties:               eclipse256.png,\
+./packages/org.eclipse.epp.package.java/build.properties:               eclipse256@2x.png,\
+./packages/org.eclipse.epp.package.java/build.properties:               eclipse_lg.png,\
+./packages/org.eclipse.epp.package.java/build.properties:               eclipse_lg@2x.png,\
+./packages/org.eclipse.epp.package.java/eclipse32.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse32.png"
+./packages/org.eclipse.epp.package.java/eclipse48.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse48@2x.png"
+./packages/org.eclipse.epp.package.java/about.ini:windowImage=eclipse16.png
+./packages/org.eclipse.epp.package.java/about.ini:aboutImage=eclipse_lg.png
+./packages/org.eclipse.epp.package.dsl/plugin.xml:               value="eclipse_lg.png">
+./packages/org.eclipse.epp.package.dsl/plugin.xml:               value="eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+./packages/org.eclipse.epp.package.dsl/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/start-cheatsheet.png"
+./packages/org.eclipse.epp.package.dsl/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+./packages/org.eclipse.epp.package.dsl/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+./packages/org.eclipse.epp.package.dsl/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+./packages/org.eclipse.epp.package.dsl/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
+./packages/org.eclipse.epp.package.dsl/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.dsl/plugin.xml:            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+./packages/org.eclipse.epp.package.dsl/build.properties:               eclipse16.png,\
+./packages/org.eclipse.epp.package.dsl/build.properties:               eclipse16@2x.png,\
+./packages/org.eclipse.epp.package.dsl/build.properties:               eclipse32.png,\
+./packages/org.eclipse.epp.package.dsl/build.properties:               eclipse32@2x.png,\
+./packages/org.eclipse.epp.package.dsl/build.properties:               eclipse48.png,\
+./packages/org.eclipse.epp.package.dsl/build.properties:               eclipse48@2x.png,\
+./packages/org.eclipse.epp.package.dsl/build.properties:               eclipse256.png,\
+./packages/org.eclipse.epp.package.dsl/build.properties:               eclipse256@2x.png,\
+./packages/org.eclipse.epp.package.dsl/build.properties:               eclipse_lg.png,\
+./packages/org.eclipse.epp.package.dsl/build.properties:               eclipse_lg@2x.png,\
+./packages/org.eclipse.epp.package.dsl/eclipse32.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse32.png"
+./packages/org.eclipse.epp.package.dsl/eclipse48.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse48@2x.png"
+./packages/org.eclipse.epp.package.dsl/about.ini:windowImage=eclipse16.png
+./packages/org.eclipse.epp.package.dsl/about.ini:aboutImage=eclipse_lg.png
+./packages/org.eclipse.epp.package.embedcpp.feature/epp.website.xml:   iconurl="http://www.eclipse.org/downloads/images/cdt.png"
+./packages/org.eclipse.epp.package.php/plugin.xml:               value="eclipse_lg.png">
+./packages/org.eclipse.epp.package.php/plugin.xml:               value="eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+./packages/org.eclipse.epp.package.php/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+./packages/org.eclipse.epp.package.php/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.php/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+./packages/org.eclipse.epp.package.php/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+./packages/org.eclipse.epp.package.php/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
+./packages/org.eclipse.epp.package.php/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.php/plugin.xml:            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+./packages/org.eclipse.epp.package.php/build.properties:               eclipse16.png,\
+./packages/org.eclipse.epp.package.php/build.properties:               eclipse16@2x.png,\
+./packages/org.eclipse.epp.package.php/build.properties:               eclipse32.png,\
+./packages/org.eclipse.epp.package.php/build.properties:               eclipse32@2x.png,\
+./packages/org.eclipse.epp.package.php/build.properties:               eclipse48.png,\
+./packages/org.eclipse.epp.package.php/build.properties:               eclipse48@2x.png,\
+./packages/org.eclipse.epp.package.php/build.properties:               eclipse256.png,\
+./packages/org.eclipse.epp.package.php/build.properties:               eclipse256@2x.png,\
+./packages/org.eclipse.epp.package.php/build.properties:               eclipse_lg.png,\
+./packages/org.eclipse.epp.package.php/build.properties:               eclipse_lg@2x.png,\
+./packages/org.eclipse.epp.package.php/eclipse32.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse32.png"
+./packages/org.eclipse.epp.package.php/eclipse48.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse48@2x.png"
+./packages/org.eclipse.epp.package.php/about.ini:windowImage=eclipse16.png
+./packages/org.eclipse.epp.package.php/about.ini:aboutImage=eclipse_lg.png
+./packages/org.eclipse.epp.package.java.feature/epp.website.xml:   iconurl="http://www.eclipse.org/downloads/images/java.png"
+./packages/org.eclipse.epp.package.php.feature/epp.website.xml:   iconurl="http://www.eclipse.org/downloads/images/php.png"
+./packages/org.eclipse.epp.package.rcp.product/epp.product:      <image path="/org.eclipse.epp.package.rcp/eclipse_lg.png"/>
+./packages/org.eclipse.epp.package.rcp.product/epp.product:   <windowImages i16="/org.eclipse.epp.package.rcp/eclipse16.png" i32="/org.eclipse.epp.package.rcp/eclipse32.png" i48="/org.eclipse.epp.package.rcp/eclipse48.png" i256="/org.eclipse.epp.package.rcp/eclipse256.png"/>
+./packages/org.eclipse.epp.package.jee/plugin.xml:               value="eclipse_lg.png">
+./packages/org.eclipse.epp.package.jee/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+./packages/org.eclipse.epp.package.jee/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+./packages/org.eclipse.epp.package.jee/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+./packages/org.eclipse.epp.package.jee/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
+./packages/org.eclipse.epp.package.jee/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.jee/plugin.xml:            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+./packages/org.eclipse.epp.package.jee/build.properties:               eclipse_lg.png,\
+./packages/org.eclipse.epp.package.jee/build.properties:               eclipse_lg@2x.png,\
+./packages/org.eclipse.epp.package.jee/about.ini:aboutImage=eclipse_lg.png
+./packages/org.eclipse.epp.package.cpp.product/epp.product:      <image path="/org.eclipse.epp.package.cpp/eclipse_lg.png"/>
+./packages/org.eclipse.epp.package.cpp.product/epp.product:   <windowImages i16="/org.eclipse.epp.package.cpp/eclipse16.png" i32="/org.eclipse.epp.package.cpp/eclipse32.png" i48="/org.eclipse.epp.package.cpp/eclipse48.png" i256="/org.eclipse.epp.package.cpp/eclipse256.png"/>
+./packages/org.eclipse.epp.package.dsl.product/epp.product:      <image path="/org.eclipse.epp.package.dsl/eclipse_lg.png"/>
+./packages/org.eclipse.epp.package.dsl.product/epp.product:   <windowImages i16="/org.eclipse.epp.package.dsl/eclipse16.png" i32="/org.eclipse.epp.package.dsl/eclipse32.png" i48="/org.eclipse.epp.package.dsl/eclipse48.png" i256="/org.eclipse.epp.package.dsl/eclipse256.png"/>
+./packages/org.eclipse.epp.package.php.product/epp.product:      <image path="/org.eclipse.epp.package.php/eclipse_lg.png"/>
+./packages/org.eclipse.epp.package.php.product/epp.product:   <windowImages i16="/org.eclipse.epp.package.php/eclipse16.png" i32="/org.eclipse.epp.package.php/eclipse32.png" i48="/org.eclipse.epp.package.php/eclipse48.png" i256="/org.eclipse.epp.package.php/eclipse256.png"/>
+./packages/org.eclipse.epp.package.jee.feature/epp.website.xml:   iconurl="http://www.eclipse.org/downloads/images/javaee.png"
+./packages/org.eclipse.epp.package.modeling/plugin.xml:               value="eclipse_lg.png">
+./packages/org.eclipse.epp.package.modeling/plugin.xml:               value="eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+./packages/org.eclipse.epp.package.modeling/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/start-cheatsheet.png"
+./packages/org.eclipse.epp.package.modeling/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
+./packages/org.eclipse.epp.package.modeling/plugin.xml:            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+./packages/org.eclipse.epp.package.modeling/plugin.xml:            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+./packages/org.eclipse.epp.package.modeling/build.properties:               eclipse16.png,\
+./packages/org.eclipse.epp.package.modeling/build.properties:               eclipse16@2x.png,\
+./packages/org.eclipse.epp.package.modeling/build.properties:               eclipse32.png,\
+./packages/org.eclipse.epp.package.modeling/build.properties:               eclipse32@2x.png,\
+./packages/org.eclipse.epp.package.modeling/build.properties:               eclipse48.png,\
+./packages/org.eclipse.epp.package.modeling/build.properties:               eclipse48@2x.png,\
+./packages/org.eclipse.epp.package.modeling/build.properties:               eclipse256.png,\
+./packages/org.eclipse.epp.package.modeling/build.properties:               eclipse256@2x.png,\
+./packages/org.eclipse.epp.package.modeling/build.properties:               eclipse_lg.png,\
+./packages/org.eclipse.epp.package.modeling/build.properties:               eclipse_lg@2x.png,\
+./packages/org.eclipse.epp.package.modeling/eclipse32.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse32.png"
+./packages/org.eclipse.epp.package.modeling/eclipse48.svg:   inkscape:export-filename="/Users/d021678/git/org.eclipse.epp.packages/packages/org.eclipse.epp.package.java/eclipse48@2x.png"
+./packages/org.eclipse.epp.package.modeling/about.ini:windowImage=eclipse16.png
+./packages/org.eclipse.epp.package.modeling/about.ini:aboutImage=eclipse_lg.png
+./releng/org.eclipse.epp.config/web/novaHeader.html:			<div id="logo"><img src="/eclipse.org-common/themes/Nova/images/eclipse.png" alt="Eclipse.org"/></div>
+./releng/org.eclipse.epp.config/web/novaHeader.html:				<li><a href='http://www.eclipseplugincentral.com'><img alt="Eclipse Plugin Central" src="http://dev.eclipse.org/custom_icons/network-wired-bw.png"/>&nbsp;<div>Eclipse Plugin Central</div></a></li>
+./releng/org.eclipse.epp.config/web/novaHeader.html:				<li><a href='http://live.eclipse.org'><img alt="Eclipse Live" src="http://dev.eclipse.org/custom_icons/audio-input-microphone-bw.png"/>&nbsp;<div>Eclipse Live</div></a></li>
+./releng/org.eclipse.epp.config/web/novaHeader.html:		    		<li><a href='https://bugs.eclipse.org/bugs/'><img alt="Bugzilla" src="http://dev.eclipse.org/custom_icons/system-search-bw.png"/>&nbsp;<div>Bugzilla</div></a></li>
+./releng/org.eclipse.epp.config/web/novaHeader.html:		    		<li><a href='http://www.planeteclipse.org/'><img alt="Planet Eclipse" src="http://dev.eclipse.org/large_icons/devices/audio-card.png"/>&nbsp;<div>Planet Eclipse</div></a></li>
+./releng/org.eclipse.epp.config/web/novaHeader.html:		    		<li><a href='http://wiki.eclipse.org/'><img alt="Eclipse Wiki" src="http://dev.eclipse.org/custom_icons/accessories-text-editor-bw.png"/>&nbsp;<div>Eclipse Wiki</div></a></li>
+./releng/org.eclipse.epp.config/web/novaHeader.html:		    		<li><a href='http://portal.eclipse.org'><img alt="MyFoundation Portal" src="http://dev.eclipse.org/custom_icons/preferences-system-network-proxy-bw.png"/><div>My Foundation Portal</div></a></li>
+./releng/org.eclipse.epp.config/oomph/EPPConfiguration.setup:      <value>https://www.eclipse.org/downloads/images/committers.png</value>
