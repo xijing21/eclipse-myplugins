@@ -71,6 +71,12 @@ About Eclipse IDE 图标：准备新的相同分辨率的图标替换
 * [X] 45：introBrandingImage：欢迎页面图片
 * [X] 49：introTitle：欢迎页面的显示字，跟在introBrandingImage之后
 * [ ] 53：introBrandingImageText
+* [X] 87：`<extension point="org.eclipse.ui.intro.quicklinks">`：修改或者增加welcome页面的内容；
+  * [X] `<url>` : 表示增加的是一个url链接
+
+    * [ ] 链接地址：外部网站在eclipse中显示丢失样式，可读性差；虚拟机上有代理的时候，网络问题无法正常访问
+    * [X] icon图片：需要增加的图片建议放到packages/packages/org.eclipse.epp.package.embedcpp/org.eclipse.ui.intro.universal.solstice 下
+  * [ ] `<command>` :表示增加的是一个eclipse内部命令
 
 #### about.ini
 

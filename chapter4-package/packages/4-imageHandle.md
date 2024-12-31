@@ -142,10 +142,10 @@ with open('cleaned_log.txt', 'w') as file:
 > 备忘在线免费的图片工具。
 
 - 在线ps：https://ps.gaoding.com/
+  - 启动背景图psd文件：D:\RuyiSDK\eclipse-imgs\splash.psd  导出为bmp格式
 - 抠图：佐糖 https://picwish.cn/remove-background
 - 改图片大小：https://www.gaitubao.com
 - 格式转换：推荐 convert 命令
-- gif录制软件：https://blog.csdn.net/u013019701/article/details/80550411
 
 
 基于linux 命令的 格式和尺寸转换：
