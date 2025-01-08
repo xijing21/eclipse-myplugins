@@ -77,74 +77,78 @@ CV1800B 是一款高性能、低功耗芯片，适用于住宅消费监控 IP �
 
 ### PC开发侧(host)：
 
-参考官方文档：https://github.com/milkv-duo/duo-examples/blob/main/README-zh.md 
+参考官方文档：https://github.com/milkv-duo/duo-examples/blob/main/README-zh.md
 
 1. 开发环境准备
-      * 开发环境说明：使用本地的 Ubuntu 系统，推荐 `Ubuntu 22.04 LTS` (也可以使用虚拟机中的 Ubuntu 系统、Windows 中 WSL 安装的 Ubuntu、基于 Docker 的 Ubuntu 系统)
-      
-      * 安装编译依赖的工具 ：
-         ```
-         sudo apt-get install wget git make
-         ```
 
+   * 开发环境说明：使用本地的 Ubuntu 系统，推荐 `Ubuntu 22.04 LTS` (也可以使用虚拟机中的 Ubuntu 系统、Windows 中 WSL 安装的 Ubuntu、基于 Docker 的 Ubuntu 系统)
+   * 安装编译依赖的工具 ：
+
+     ```
+     sudo apt-get install wget git make
+     ```
 2. 下载实例代码并利用代码中的脚本执行开发环境检测
-      * 获取 Examples
-         ```
-         git clone https://github.com/milkv-duo/duo-examples.git
-         ```
-      
-      * 加载编译环境
-         ```
-         cd duo-examples
-         source envsetup.sh
+
+   * 获取 Examples
+
+     ```
+     git clone https://github.com/milkv-duo/duo-examples.git
+     ```
+   * 加载编译环境
+
+     ```
+     cd duo-examples
+     source envsetup.sh
+     ```
+
+     第一次加载会自动下载所需的编译工具链，下载后的目录名为 `host-tools`，下次再加载编译环境时，会检测该目录，如果已存在则不会再次下载。
+     加载编译环境时需要按提示输入所需编译目标：
+
+     ```
+     Select Product:
+     1. Duo (CV1800B)
+     2. Duo256M (SG2002) or DuoS (SG2000)
+     ```
+
+     如果目标板是 Duo 则选择 `1`，如果目标板是 Duo256M 或者 DuoS 则选择 `2`。
+
+     由于 Duo256M 和 DuoS 支持 RISCV 和 ARM 两种架构，还需要按提示继续选择：
+
+     ```
+     Select Arch:
+     1. ARM64
+     2. RISCV64
+     Which would you like:
+     ```
+
+     如果测试程序需要在 ARM 系统中运行，选择 `1`，如果是 RISCV 系统则选择 `2`。
+     注意：
+
+     - 建议查看 envsetup.sh 了解它做了什么：
+       - 脚本检测host是否安装了合适的编译器，没有则会自动下载host-tools(其实就是[gcc](https://github.com/milkv-duo/host-tools/tree/master/gcc)) 到 duo-examples 目录下；
+       - 脚本会通过Export设置环境变量 `$(TOOLCHAIN_PREFIX)`、`$(CFLAGS)`和 `$(LDFLAGS)` 等;当前会话窗口后续都能访问该环境变量，为了了解环境变量信息可以执行下面的脚本，或者直接在 envsetup.sh 最后加上下面的命令：
+
+         ```bash
+         echo "CHIP: "$CHIP
+         echo "TOOLCHAIN_PREFIX: "$TOOLCHAIN_PREFIX
+         echo "CC: "$CC
+         echo "CFLAGS: "$CFLAGS
+         echo "LDFLAGS: "$LDFLAGS
          ```
 
-         第一次加载会自动下载所需的编译工具链，下载后的目录名为 `host-tools`，下次再加载编译环境时，会检测该目录，如果已存在则不会再次下载。
-         加载编译环境时需要按提示输入所需编译目标：
+         输出的环境变量信息如下：
 
+         ```bash
+            CHIP: CV180X
+            TOOLCHAIN_PREFIX: /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
+            CC: /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc
+            CFLAGS: -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d -O3 -DNDEBUG -I/home/phebe/milkv/duo/duo-examples/include/system
+            LDFLAGS: -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -L/home/phebe/milkv/duo/duo-examples/libs/system/musl_riscv64
          ```
-         Select Product:
-         1. Duo (CV1800B)
-         2. Duo256M (SG2002) or DuoS (SG2000)
-         ```
-
-         如果目标板是 Duo 则选择 `1`，如果目标板是 Duo256M 或者 DuoS 则选择 `2`。
-         
-         由于 Duo256M 和 DuoS 支持 RISCV 和 ARM 两种架构，还需要按提示继续选择：
-
-         ```
-         Select Arch:
-         1. ARM64
-         2. RISCV64
-         Which would you like:
-         ```
-
-         如果测试程序需要在 ARM 系统中运行，选择 `1`，如果是 RISCV 系统则选择 `2`。
-         注意：
-         - 建议查看 envsetup.sh 了解它做了什么：
-            - 脚本检测host是否安装了合适的编译器，没有则会自动下载host-tools(其实就是[gcc](https://github.com/milkv-duo/host-tools/tree/master/gcc)) 到 duo-examples 目录下；
-            - 脚本会通过Export设置环境变量 `$(TOOLCHAIN_PREFIX)`、`$(CFLAGS)`和 `$(LDFLAGS)` 等;当前会话窗口后续都能访问该环境变量，为了了解环境变量信息可以执行下面的脚本，或者直接在 envsetup.sh 最后加上下面的命令：
-               ```bash
-               echo "CHIP: "$CHIP
-               echo "TOOLCHAIN_PREFIX: "$TOOLCHAIN_PREFIX
-               echo "CC: "$CC
-               echo "CFLAGS: "$CFLAGS
-               echo "LDFLAGS: "$LDFLAGS
-               ```
-               输出的环境变量信息如下：
-
-               ```bash
-                  CHIP: CV180X
-                  TOOLCHAIN_PREFIX: /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
-                  CC: /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc
-                  CFLAGS: -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d -O3 -DNDEBUG -I/home/phebe/milkv/duo/duo-examples/include/system
-                  LDFLAGS: -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -L/home/phebe/milkv/duo/duo-examples/libs/system/musl_riscv64
-               ```
-         - **请注意envsetup.sh需要用source执行，这样保证了脚本执行完毕后，设置的环境变量在当前 shell 中一直生效。因此同一个终端中，只需要加载一次编译环境即可。**
-         - 当新建一个终端时，环境变量不再有效，需要注意 envsetup.sh 中设置的编译器等环境变量失效，需要再次执行，或者直接设置环境变量。
-
+     - **请注意envsetup.sh需要用source执行，这样保证了脚本执行完毕后，设置的环境变量在当前 shell 中一直生效。因此同一个终端中，只需要加载一次编译环境即可。**
+     - 当新建一个终端时，环境变量不再有效，需要注意 envsetup.sh 中设置的编译器等环境变量失效，需要再次执行，或者直接设置环境变量。
 3. 编译测试
-  以 `hello-world`为例，进入该例子目录直接执行 make 即可：
+   以 `hello-world`为例，进入该例子目录直接执行 make 即可：
 
    ```bash
    #make构建
@@ -159,14 +163,12 @@ CV1800B 是一款高性能、低功耗芯片，适用于住宅消费监控 IP �
    #bash: ./helloworld: cannot execute binary file: Exec format error
 
    ```
-
 4. 目标程序传输到目标设备
    编译成功后将生成的 `helloworld` 可执行程序通过网口或者 USB-NCM 网络等方式传送到 Duo 设备中，比如[默认固件](https://github.com/milkv-duo/duo-buildroot-sdk/releases)支持的 USB-NCM 方式，Duo 的 IP 为 `192.168.42.1`，用户名是 `root`，密码是 `milkv`。
 
    ```
    $ scp helloworld root@192.168.42.1:/root/
    ```
-
 5. 执行目标程序
    发送成功后，在 ssh 或者串口登陆的终端中运行 `./helloworld`，会打印 `Hello, World!`
 
@@ -183,3 +185,6 @@ CV1800B 是一款高性能、低功耗芯片，适用于住宅消费监控 IP �
    ```
 
   **至此，我们的编译开发环境就可以正常使用了**
+
+
+其它参考：https://gitee.com/yunxiangluo/milkv-duo/blob/master/README.md
