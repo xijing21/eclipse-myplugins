@@ -78,9 +78,7 @@
 
 ### 运行目标程序
 
-#### 在RV设备上运行
-
-##### RV设备端：烧录镜像
+#### RV设备端：烧录镜像
 
 1. 【建议，但非必须，可以避免烧录过程出问题】格式化SD卡，准备烧录镜像
 
@@ -111,7 +109,7 @@
    root 密码: milkv
    ```
 
-##### 执行目标程序
+#### 执行目标程序
 
 1. PC：执行scp拷贝命令将目标程序传输到目标设备
 
@@ -129,9 +127,6 @@
    [root@milkv]~# ./helloworld
    Hello, World!
    ```
-
-#### 在QEMU模拟器中运行
-
 
 ### gdbserver远程调试
 
@@ -243,3 +238,42 @@ GDB更详细的使用方法可参考如下指令按需使用：
 | backtrace      | bt       |          | 产看函数调用信息(堆栈)                                                                   |
 | frame          | f        |          | 查看栈帧                                                                                 |
 | quit           | q        |          | 退出GDB环境                                                                              |
+
+
+### QEMU模拟器
+针对 gnu-milkv-milkv-duo-musl-bin ，暂无配套的qemu模拟器。
+
+1. 下载安装qemu
+
+   ```
+   #查询并安装qemu
+   ruyi list | grep "qemu"
+   ruyi install qemu-user-riscv-upstream
+   #ruyi install qemu-system-riscv-upstream
+
+   #创建带qemu的虚拟环境
+   ruyi venv -t gnu-milkv-milkv-duo-musl-bin -e qemu-user-riscv-upstream  milkv-duo  venv-milkvduo-qemuuser
+   source ~/venv-milkvduo-qemuuser/bin/ruyi-activate 
+
+   ruyi-qemu ~/milkv-duo-examples/hello-world/helloworld
+   ruyi-qemu ~/ews-milkvduo-t01/sumdemo/sumdemo
+   qemu-riscv64: warning: disabling zfa extension because privilege spec version does not match
+
+   ruyi-deactivate 
+
+   ------------
+
+   ruyi venv -t gnu-milkv-milkv-duo-musl-bin -e qemu-user-riscv-upstream  generic  venv-milkvduo-generic-qemuuser
+   ruyi-qemu ~/milkv-duo-examples/hello-world/helloworld
+   ruyi-qemu ~/ews-milkvduo-t01/sumdemo/sumdemo
+   没有任何输出
+
+
+   ruyi venv -t gnu-milkv-milkv-duo-musl-bin -e qemu-user-riscv-xthead  milkv-duo  venv-milkvduo-x
+   qemu-riscv64: unable to find CPU model 'thead-c906'
+
+   ---------换编译器
+   ruyi venv -t gnu-upstream -e qemu-user-riscv-upstream  generic  venv-generic
+
+
+   ```

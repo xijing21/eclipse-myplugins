@@ -175,10 +175,6 @@ ruyi extract milkv-duo-examples
   > milkv duo img 目前不支持sftp：https://github.com/milkv-duo/duo-buildroot-sdk/issues/167  当milvduo镜像支持 sftp-server 后该问题能够解决。
   >
 
-### 通过QEMU模拟运行
-
-> 没有RISC-V开发板时，可以通过此方式。
-
 ## 调试
 
 ### 调试示例
