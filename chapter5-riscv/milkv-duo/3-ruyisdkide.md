@@ -53,14 +53,14 @@ ruyi extract milkv-duo-examples
 
    ```makefile
    # Eclipse 工具链设置
-   #TOOLCHAIN_PREFIX := /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
-   TOOLCHAIN_PREFIX := /home/phebe//.local/share/ruyi/binaries/x86_64/gnu-milkv-milkv-duo-musl-bin-0.20240731.0+git.67688c7335e7/bin/riscv64-unknown-linux-musl-
-   #CC := /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc
+   #TOOLCHAIN_PREFIX := ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
+   TOOLCHAIN_PREFIX := ~//.local/share/ruyi/binaries/x86_64/gnu-milkv-milkv-duo-musl-bin-0.20240731.0+git.67688c7335e7/bin/riscv64-unknown-linux-musl-
+   #CC := ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc
 
    # 编译选项
-   #CFLAGS := -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d -g -DNDEBUG -I/home/phebe/milkv/duo/duo-examples/include/system
-   CFLAGS := -mcpu=c906fdv -march=rv64imafdcv0p7xthead -O3  -g -I/home/phebe/milkv/duo/duo-examples/include/system 
-   LDFLAGS := -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -L/home/phebe/milkv/duo/duo-examples/libs/system/musl_riscv64
+   #CFLAGS := -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d -g -DNDEBUG -I~/milkv/duo/duo-examples/include/system
+   CFLAGS := -mcpu=c906fdv -march=rv64imafdcv0p7xthead -O3  -g -I~/milkv/duo/duo-examples/include/system 
+   LDFLAGS := -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -L~/milkv/duo/duo-examples/libs/system/musl_riscv64
 
    TARGET=helloworld
 
@@ -212,14 +212,14 @@ Makefile：
 
 ```makefile
 # Eclipse 工具链设置
-TOOLCHAIN_PREFIX := /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
-#TOOLCHAIN_PREFIX := /home/phebe//.local/share/ruyi/binaries/x86_64/gnu-milkv-milkv-duo-musl-bin-0.20240731.0+git.67688c7335e7/bin/riscv64-unknown-linux-musl-
-#CC := /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc
+TOOLCHAIN_PREFIX := ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
+#TOOLCHAIN_PREFIX := ~//.local/share/ruyi/binaries/x86_64/gnu-milkv-milkv-duo-musl-bin-0.20240731.0+git.67688c7335e7/bin/riscv64-unknown-linux-musl-
+#CC := ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc
 
 # 编译选项-O3   -static
-#CFLAGS := -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d -g -DNDEBUG -I/home/phebe/milkv/duo/duo-examples/include/system
-CFLAGS := -mcpu=c906fdv -march=rv64imafdcv0p7xthead -g -I/home/phebe/milkv/duo/duo-examples/include/system 
-LDFLAGS := -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -L/home/phebe/milkv/duo/duo-examples/libs/system/musl_riscv64
+#CFLAGS := -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d -g -DNDEBUG -I~/milkv/duo/duo-examples/include/system
+CFLAGS := -mcpu=c906fdv -march=rv64imafdcv0p7xthead -g -I~/milkv/duo/duo-examples/include/system 
+LDFLAGS := -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -L~/milkv/duo/duo-examples/libs/system/musl_riscv64
 
 TARGET=sumdemo
 

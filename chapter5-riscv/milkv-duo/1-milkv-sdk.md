@@ -67,10 +67,10 @@ CV1800B 是一款高性能、低功耗芯片，适用于住宅消费监控 IP �
    ```bash
 
    #烧录镜像(img按需置换成所需的文件)
-   sudo dd if=/home/phebe/Downloads/milkv-duo-sd-v1.1.4.img  of=/dev/sdb  bs=1M status=progress 
+   sudo dd if=~/Downloads/milkv-duo-sd-v1.1.4.img  of=/dev/sdb  bs=1M status=progress 
 
    # 烧录完成后，请将sd卡插入到 milkv duo sd卡卡槽中，将 milkv duo 设备通过 usb-typec 线通电，通电后将自动启动，启动成功后执行如下操作连接 milkv duo 设备进行远程操作
-   #ssh-keygen -f "/home/phebe/.ssh/known_hosts" -R "192.168.42.1"
+   #ssh-keygen -f "~/.ssh/known_hosts" -R "192.168.42.1"
    ssh root@192.168.42.1  
    root 密码: milkv
    ```
@@ -140,10 +140,10 @@ CV1800B 是一款高性能、低功耗芯片，适用于住宅消费监控 IP �
 
          ```bash
             CHIP: CV180X
-            TOOLCHAIN_PREFIX: /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
-            CC: /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc
-            CFLAGS: -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d -O3 -DNDEBUG -I/home/phebe/milkv/duo/duo-examples/include/system
-            LDFLAGS: -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -L/home/phebe/milkv/duo/duo-examples/libs/system/musl_riscv64
+            TOOLCHAIN_PREFIX: ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
+            CC: ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc
+            CFLAGS: -mcpu=c906fdv -march=rv64imafdcv0p7xthead -mcmodel=medany -mabi=lp64d -O3 -DNDEBUG -I~/milkv/duo/duo-examples/include/system
+            LDFLAGS: -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -L~/milkv/duo/duo-examples/libs/system/musl_riscv64
          ```
      - **请注意envsetup.sh需要用source执行，这样保证了脚本执行完毕后，设置的环境变量在当前 shell 中一直生效。因此同一个终端中，只需要加载一次编译环境即可。**
      - 当新建一个终端时，环境变量不再有效，需要注意 envsetup.sh 中设置的编译器等环境变量失效，需要再次执行，或者直接设置环境变量。
@@ -177,7 +177,7 @@ CV1800B 是一款高性能、低功耗芯片，适用于住宅消费监控 IP �
    #milkv duo 通过 type-c+usb 连接线接 host设备（USB口接host）；
 
    #连接远程设备
-   #ssh-keygen -f "/home/phebe/.ssh/known_hosts" -R "192.168.42.1"
+   #ssh-keygen -f "~/.ssh/known_hosts" -R "192.168.42.1"
    ssh root@192.168.42.1
 
    [root@milkv]~# ./helloworld

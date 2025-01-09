@@ -174,9 +174,9 @@
    - 方法2：命令行执行 make
    - 方法3：gcc命令
 
-     - /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc -mcpu=c906fdv -march=rv64imafdcv0p7xthead -O3  -g -o helloworld helloworld.c   #调试的时候报错，找不到库（待进一步确认）
+     - ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc -mcpu=c906fdv -march=rv64imafdcv0p7xthead -O3  -g -o helloworld helloworld.c   #调试的时候报错，找不到库（待进一步确认）
        ![1736323322849](image/1736323322849.png)
-     - /home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc -g -o helloworld helloworld.c   -static   #静态链接，调试顺利
+     - ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc -g -o helloworld helloworld.c   -static   #静态链接，调试顺利
 5. 调试
 
    使用 gdbserver 进行调试，详细补充见下面章节。
@@ -193,14 +193,14 @@
 2. PC端（helloworld.c所在目录下操作）：
 
    ```
-   cd /home/phebe/milkv-duo-examples/hello-world
+   cd ~/milkv-duo-examples/hello-world
 
    #查看gdb版本，启动调试
-   #/home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gdb --version
-   #/home/phebe/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gdb ./helloworld
+   #~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gdb --version
+   #~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gdb ./helloworld
 
    #这里尽量使用ruyi已经提供的功能，基于之前创建的虚拟环境，激活虚拟环境，在虚拟环境下编译（感觉好处就是不用设置环境变量，gcc也不用指定绝对路径
-   source /home/phebe/venv-milkvduo/bin/ruyi-activate 
+   source ~/venv-milkvduo/bin/ruyi-activate 
    riscv64-unknown-linux-musl-gdb --version
    riscv64-unknown-linux-musl-gdb ./helloworld
 
@@ -217,7 +217,7 @@
 
 ![1736245928403](image/1736245928403.png)
 
-GDB更详细的使用方法可参考如下指令按需使用：
+GDB更详细的使用方法可参考GDB帮助。
 
 | 命令           | 命令缩写 |          | 命令说明                                                                                 |
 | -------------- | -------- | -------- | ---------------------------------------------------------------------------------------- |
@@ -238,42 +238,3 @@ GDB更详细的使用方法可参考如下指令按需使用：
 | backtrace      | bt       |          | 产看函数调用信息(堆栈)                                                                   |
 | frame          | f        |          | 查看栈帧                                                                                 |
 | quit           | q        |          | 退出GDB环境                                                                              |
-
-
-### QEMU模拟器
-针对 gnu-milkv-milkv-duo-musl-bin ，暂无配套的qemu模拟器。
-
-1. 下载安装qemu
-
-   ```
-   #查询并安装qemu
-   ruyi list | grep "qemu"
-   ruyi install qemu-user-riscv-upstream
-   #ruyi install qemu-system-riscv-upstream
-
-   #创建带qemu的虚拟环境
-   ruyi venv -t gnu-milkv-milkv-duo-musl-bin -e qemu-user-riscv-upstream  milkv-duo  venv-milkvduo-qemuuser
-   source ~/venv-milkvduo-qemuuser/bin/ruyi-activate 
-
-   ruyi-qemu ~/milkv-duo-examples/hello-world/helloworld
-   ruyi-qemu ~/ews-milkvduo-t01/sumdemo/sumdemo
-   qemu-riscv64: warning: disabling zfa extension because privilege spec version does not match
-
-   ruyi-deactivate 
-
-   ------------
-
-   ruyi venv -t gnu-milkv-milkv-duo-musl-bin -e qemu-user-riscv-upstream  generic  venv-milkvduo-generic-qemuuser
-   ruyi-qemu ~/milkv-duo-examples/hello-world/helloworld
-   ruyi-qemu ~/ews-milkvduo-t01/sumdemo/sumdemo
-   没有任何输出
-
-
-   ruyi venv -t gnu-milkv-milkv-duo-musl-bin -e qemu-user-riscv-xthead  milkv-duo  venv-milkvduo-x
-   qemu-riscv64: unable to find CPU model 'thead-c906'
-
-   ---------换编译器
-   ruyi venv -t gnu-upstream -e qemu-user-riscv-upstream  generic  venv-generic
-
-
-   ```
