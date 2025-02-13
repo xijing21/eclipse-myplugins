@@ -238,3 +238,92 @@ GDB更详细的使用方法可参考GDB帮助。
 | backtrace      | bt       |          | 产看函数调用信息(堆栈)                                                                   |
 | frame          | f        |          | 查看栈帧                                                                                 |
 | quit           | q        |          | 退出GDB环境                                                                              |
+
+
+## 使用QEMU模拟器
+针对 gnu-milkv-milkv-duo-musl-bin ，暂无配套的qemu模拟器。
+
+### 下载安装qemu
+
+   ```
+   #查询并安装qemu
+   ruyi list | grep "qemu"
+   ruyi install qemu-user-riscv-upstream
+   #ruyi install qemu-system-riscv-upstream
+
+   #创建带qemu的虚拟环境
+   ruyi venv -t gnu-milkv-milkv-duo-musl-bin -e qemu-user-riscv-upstream  milkv-duo  venv-milkvduo-qemuuser
+   source ~/venv-milkvduo-qemuuser/bin/ruyi-activate 
+
+   ruyi-qemu ~/milkv-duo-examples/hello-world/helloworld
+   ruyi-qemu ~/ews-milkvduo-t01/sumdemo/sumdemo
+   qemu-riscv64: warning: disabling zfa extension because privilege spec version does not match
+
+   ruyi-deactivate 
+
+   ------------
+
+   ruyi venv -t gnu-milkv-milkv-duo-musl-bin -e qemu-user-riscv-upstream  generic  venv-milkvduo-generic-qemuuser
+   ruyi-qemu ~/milkv-duo-examples/hello-world/helloworld
+   ruyi-qemu ~/ews-milkvduo-t01/sumdemo/sumdemo
+   没有任何输出
+
+
+   ruyi venv -t gnu-milkv-milkv-duo-musl-bin -e qemu-user-riscv-xthead  milkv-duo  venv-milkvduo-x
+   qemu-riscv64: unable to find CPU model 'thead-c906'
+
+   ---------换编译器
+   ruyi venv -t gnu-upstream -e qemu-user-riscv-upstream  generic  venv-generic
+
+
+   ```
+
+### 模拟运行
+#### 配置1
+TOOLCHAIN_PREFIX := ~/.local/share/ruyi/binaries/x86_64/gnu-upstream-0.20231212.0/bin/riscv64-unknown-linux-gnu-
+CFLAGS := -g -static
+LDFLAGS :=  -D_FILE_OFFSET_BITS=64 
+
+在RV设备上运行：
+[root@milkv-duo]~/target# ./helloworld 
+Hello, Welcome to the world of RuyiSDK!
+
+在host上模拟运行：
+«Ruyi venv-generic» phebe@phebe-virtual-machine:~/milkv-duo-examples/hello-world$ ruyi-qemu helloworld
+Hello, Welcome to the world of RuyiSDK!
+
+#### 配置2
+TOOLCHAIN_PREFIX := ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-x86_64/bin/riscv64-unknown-linux-gnu-
+CFLAGS := -g -static
+LDFLAGS :=  -D_FILE_OFFSET_BITS=64 
+在RV设备上运行：
+[root@milkv-duo]~/target# ./helloworld 
+Hello, Welcome to the world of RuyiSDK!
+
+在host上模拟运行：
+«Ruyi venv-generic» phebe@phebe-virtual-machine:~/milkv-duo-examples/hello-world$ ruyi-qemu helloworld
+> 无任何输出，也无任何报错
+
+
+#### 配置3
+TOOLCHAIN_PREFIX := ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
+CFLAGS := -g -static
+LDFLAGS :=  -D_FILE_OFFSET_BITS=64 
+
+«Ruyi venv-milkvduo-qemuuser» phebe@phebe-virtual-machine:~/milkv-duo-examples/hello-world$ ruyi-qemu ./helloworld
+qemu-riscv64: warning: disabling zfa extension because privilege spec version does not match
+Hello, Welcome to the world of RuyiSDK!
+
+
+#### 配置4
+TOOLCHAIN_PREFIX := ~/milkv/duo/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
+CFLAGS := -mcpu=c906fdv -march=rv64imafdcv0p7xthead -g -I/home/phebe/milkv/duo/duo-examples/include/system -static
+LDFLAGS := -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -L/home/phebe/milkv/duo/duo-examples/libs/system/musl_riscv64
+
+«Ruyi venv-milkvduo-qemuuser» phebe@phebe-virtual-machine:~/milkv-duo-examples/hello-world$ ruyi-qemu ./helloworld
+qemu-riscv64: warning: disabling zfa extension because privilege spec version does not match
+
+> 提示zfa，但是没有运行结果输出
+
+
+
